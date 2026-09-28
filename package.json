@@ -1,0 +1,54 @@
+{
+  "name": "@studio99/api",
+  "version": "0.1.0",
+  "description": "Official Node.js client for the Studio99 Indic Typography API: exact Hindi, Marathi, Gujarati and English typography as editable SVG and PNG.",
+  "keywords": [
+    "studio99",
+    "hindi",
+    "marathi",
+    "gujarati",
+    "devanagari",
+    "calligraphy",
+    "typography",
+    "indic",
+    "svg"
+  ],
+  "homepage": "https://studio99.app/developers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/studio99-app/studio99-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/studio99-app/studio99-node/issues",
+    "email": "reach@studio99.app"
+  },
+  "license": "MIT",
+  "author": "ArtoMania Studio Private Limited <reach@studio99.app> (https://studio99.app)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test test/client.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
