@@ -1,5 +1,7 @@
 # studio99-node
 
+[![npm](https://img.shields.io/npm/v/@studio99/api)](https://www.npmjs.com/package/@studio99/api)
+
 Official Node.js client for the **Studio99 Indic Typography API**: exact Hindi, Marathi, Gujarati and English text as editable SVG and PNG, from real calligraphy fonts.
 
 - Zero dependencies, TypeScript types included, Node 18+
@@ -10,8 +12,6 @@ Official Node.js client for the **Studio99 Indic Typography API**: exact Hindi, 
 
 ```bash
 npm install @studio99/api
-# or, before the npm release:
-npm install github:studio99-app/studio99-node
 ```
 
 Get an API key at https://accounts.studio99.app/dashboard/products/studio99-api (Free plan: 100 credits a month, watermarked previews).
